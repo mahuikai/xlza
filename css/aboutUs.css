@@ -1,0 +1,64 @@
+@charset "utf-8";
+.main {
+  background: url("../images/bg.jpg") repeat center / contain;
+}
+.main .banner img {
+  width: 100%;
+  display: block;
+}
+.main .product {
+  padding: 0 20px;
+  background: white;
+}
+.main .product .left {
+  float: left;
+}
+.main .product .left .tit {
+  line-height: 40px;
+  background: #666;
+  padding-left: 15px;
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.main .product .left > ul li {
+  width: 256px;
+  height: 40px;
+  background: #ddd;
+  margin-top: 10px;
+}
+.main .product .left > ul li a {
+  display: block;
+  border-left: 5px solid #333;
+  line-height: 40px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.main .product .left > ul li:hover {
+  background: #bbbbbb;
+}
+.main .product .right {
+  overflow: hidden;
+  padding-left: 22px;
+}
+.main .product .right .part {
+  display: none;
+}
+.main .product .right .part > p {
+  padding: 12px 10px;
+  border-bottom: 1px solid #666666;
+  font-size: 16px;
+  font-weight: 700;
+}
+.main .product .right .part div p {
+  text-indent: 2em;
+  font-size: 18px;
+  margin: 20px 0;
+}
+.main .product .right .part div img {
+  display: block;
+  margin: 20px auto;
+}
+.main .product .right .current {
+  display: block;
+}

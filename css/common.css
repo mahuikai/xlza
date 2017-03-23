@@ -1,0 +1,170 @@
+@charset "utf-8";
+html,
+body,
+div,
+a,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+dl,
+dt,
+dd,
+li,
+input,
+textarea,
+p,
+a,
+img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font: 14px "microsoft yahei", "sans-serif";
+  color: #666;
+}
+.w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.pad22 {
+  padding: 0 22px;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+ul,
+ol {
+  list-style: none;
+}
+.clearfix::after,
+.clearfix::before {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.fll {
+  float: left;
+}
+.flr {
+  float: right;
+}
+/*公共样式*/
+header .header-top {
+  height: 30px;
+  background: #C8C8C8;
+}
+header .header-top ul {
+  float: right;
+  height: 100%;
+}
+header .header-top ul li {
+  float: left;
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+}
+header .header-top ul li a {
+  height: 100%;
+  padding: 0 10px;
+}
+header .header-center {
+  height: 80px;
+  background: #FBFBFB;
+}
+header .header-center img {
+  height: 80px;
+}
+header .header-center p {
+  float: right;
+  font-size: 24px;
+  color: red;
+  line-height: 80px;
+  font-weight: 900;
+}
+header .header-center p small {
+  font-size: 16px;
+  color: #666;
+  font-weight: normal;
+}
+header .header-bottom {
+  background: #888;
+}
+header .header-bottom ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .header-bottom ul li {
+  float: left;
+}
+header .header-bottom ul li a {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 48px;
+  color: #ddd;
+  font-size: 16px;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+header .header-bottom ul li a:hover {
+  color: #fff;
+  border-bottom: 3px solid red;
+}
+header .header-bottom ul span {
+  display: inline-block;
+  width: 2px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 2px;
+  margin: 0 10px;
+}
+footer {
+  width: 100%;
+}
+footer .container {
+  background: #1E3242;
+}
+footer .container .ft-top {
+  height: 190px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+footer .container .ft-top dl {
+  width: 200px;
+  padding-left: 20px;
+  font-size: 14px;
+  float: left;
+}
+footer .container .ft-top dl dt {
+  color: #54A7F4;
+  padding: 10px 0;
+}
+footer .container .ft-top dl dd {
+  color: #ffffff;
+  padding: 4px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+footer .ft-bottom {
+  background: #1E1E1E;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
+}
+footer .ft-bottom p {
+  margin-top: 5px;
+  font-size: 8px;
+  font-weight: normal;
+}

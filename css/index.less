@@ -1,0 +1,188 @@
+@charset "utf-8";
+//轮播图
+.banner {
+  width: 100%;
+
+  .cantainer {
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+    ul {
+      width: 400%;
+      position: relative;
+      top: 0;
+      left: 0;
+      li {
+        width: 25%;
+        float: left;
+        a {
+          display: block;
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+    }
+    ol {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      li {
+        width: 10px;
+        height: 10px;
+        background: white;
+        float: left;
+        border-radius: 9px;
+        margin-right: 10px;
+        cursor: pointer;
+        &.current {
+          background: red;
+        }
+      }
+
+    }
+    .arr {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 40px;
+      font-family: "sans-serif";
+      font-weight: 700;
+      text-align: center;
+      line-height: 60px;
+      opacity: 0.5;
+      width: 100%;
+      display: none;
+      .left, .right {
+        width: 40px;
+        height: 60px;
+        background: #444;
+        float: left;
+        color: white;
+        margin: 0 20px;
+        cursor: pointer;
+
+      }
+      .right {
+        float: right;
+
+      }
+    }
+  }
+}
+//主体部分
+.main {
+  background: url(../images/bg.jpg) repeat center/cover;
+  .cantainer {
+    > ul {
+      padding: 20px 22px;
+      display: flex;
+      justify-content: space-between;
+      li {
+        width: 340px;
+        height: 127px;
+        border: 2px solid #F1F1F1;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        background: #F8F8F8;
+
+        img {
+          width: 150px;
+          margin-right: 10px;
+        }
+        .right {
+          h4 {
+            font-size: 16px;
+            color: skyblue;
+          }
+          p {
+            font-size: 12px;
+            padding-top: 5px;
+          }
+
+        }
+
+      }
+    }
+    .sever {
+      background: #ffffff;
+      .top {
+        padding: 10px 0;
+        border-bottom: 5px solid #ACACAC;
+        .t-left {
+          float: left;
+          font-size: 16px;
+        }
+        .t-right {
+          float: right;
+        }
+      }
+      .product {
+        ul {
+          padding: 22px 0 30px;
+          display: flex;
+          justify-content: space-between;
+          li {
+            width: 256px;
+            height: 192px;
+            position: relative;
+            overflow: hidden;
+            &::after {
+              content: '家用电器';
+              position: absolute;
+              height: 30px;
+              width: 100%;
+              line-height: 30px;
+              text-align: center;
+              bottom: 0;
+              left: 0;
+              color: #ffffff;
+              background: rgba(60, 60, 60, .5);
+              font-size: 16px;
+              letter-spacing: 1px;
+            }
+            .sec {
+              height: 50px;
+              background: rgba(60, 60, 60, .5);
+              position: absolute;
+              text-align: center;
+              width: 100%;
+              line-height: 50px;
+              transform: translateY(-100%);
+              transition: all .6s;
+              color: #ffffff;
+              z-index: 1;
+              font-size: 12px;
+
+            }
+            &:hover .sec {
+              transform: translateY(0);
+
+            }
+            &:hover img {
+              transform: scale(1.1);
+            }
+            img {
+              width: 100%;
+              transition: all 1s;
+            }
+
+          }
+
+        }
+        .num8 {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+  }
+}
+

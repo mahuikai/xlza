@@ -1,0 +1,168 @@
+@charset "utf-8";
+.banner {
+  width: 100%;
+}
+.banner .cantainer {
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+}
+.banner .cantainer ul {
+  width: 400%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.banner .cantainer ul li {
+  width: 25%;
+  float: left;
+}
+.banner .cantainer ul li a {
+  display: block;
+}
+.banner .cantainer ul li a img {
+  width: 100%;
+  display: block;
+}
+.banner .cantainer ol {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.banner .cantainer ol li {
+  width: 10px;
+  height: 10px;
+  background: white;
+  float: left;
+  border-radius: 9px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.banner .cantainer ol li.current {
+  background: red;
+}
+.banner .cantainer .arr {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  font-family: "sans-serif";
+  font-weight: 700;
+  text-align: center;
+  line-height: 60px;
+  opacity: 0.5;
+  width: 100%;
+  display: none;
+}
+.banner .cantainer .arr .left,
+.banner .cantainer .arr .right {
+  width: 40px;
+  height: 60px;
+  background: #444;
+  float: left;
+  color: white;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.banner .cantainer .arr .right {
+  float: right;
+}
+.main {
+  background: url(../images/bg.jpg) repeat center / cover;
+}
+.main .cantainer > ul {
+  padding: 20px 22px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .cantainer > ul li {
+  width: 340px;
+  height: 127px;
+  border: 2px solid #F1F1F1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background: #F8F8F8;
+}
+.main .cantainer > ul li img {
+  width: 150px;
+  margin-right: 10px;
+}
+.main .cantainer > ul li .right h4 {
+  font-size: 16px;
+  color: skyblue;
+}
+.main .cantainer > ul li .right p {
+  font-size: 12px;
+  padding-top: 5px;
+}
+.main .cantainer .sever {
+  background: #ffffff;
+}
+.main .cantainer .sever .top {
+  padding: 10px 0;
+  border-bottom: 5px solid #ACACAC;
+}
+.main .cantainer .sever .top .t-left {
+  float: left;
+  font-size: 16px;
+}
+.main .cantainer .sever .top .t-right {
+  float: right;
+}
+.main .cantainer .sever .product ul {
+  padding: 22px 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .cantainer .sever .product ul li {
+  width: 256px;
+  height: 192px;
+  position: relative;
+  overflow: hidden;
+}
+.main .cantainer .sever .product ul li::after {
+  content: '家用电器';
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
+  background: rgba(60, 60, 60, 0.5);
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.main .cantainer .sever .product ul li .sec {
+  height: 50px;
+  background: rgba(60, 60, 60, 0.5);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  line-height: 50px;
+  transform: translateY(-100%);
+  transition: all .6s;
+  color: #ffffff;
+  z-index: 1;
+  font-size: 12px;
+}
+.main .cantainer .sever .product ul li:hover .sec {
+  transform: translateY(0);
+}
+.main .cantainer .sever .product ul li:hover img {
+  transform: scale(1.1);
+}
+.main .cantainer .sever .product ul li img {
+  width: 100%;
+  transition: all 1s;
+}
+.main .cantainer .sever .product .num8 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .cantainer .sever .product .num8 li {
+  margin-bottom: 10px;
+}
